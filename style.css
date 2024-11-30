@@ -1,0 +1,141 @@
+p{
+    background-color: beige;
+    margin-top: 15px; /* Memberikan jarak antara ul dan konten */
+    font-family: cursive;
+}
+ol{
+    background-color: beige;
+    font-family: cursive;
+}
+ol.a{
+    align:justify;
+}
+@font-face {
+    font-family: 'Namaku';
+    src: url('Namaku.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'Aachen Std Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Aachen Std Bold'), url('Aachen\ Std\ Bold.woff') format('woff');
+    }
+
+.fixed{
+    position: fixed;
+}
+body{
+    margin: 0;
+}
+.header{
+    width: 1280px;
+    height: 90px; /* Tinggi header */
+    position: relative; /* Agar header ikut scroll bersama halaman */
+    background-color: rgb(128, 152, 150);
+}
+/* kode css navigator */
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    width: 1280px;
+    height: 65px;
+    background:rgb(128, 152, 150);;
+    position: relative; /* Agar ul ikut scroll bersama halaman */
+    top: 60px; /* Menempatkan ul tepat di bawah header */
+}
+
+/* Tambahkan padding-top atau margin-top pada .konten */
+.konten {
+    display: none;
+    margin-top: 15px; /* Memberikan jarak antara ul dan konten */
+}
+
+li{
+    float: left;
+}
+
+
+li a, .dropbtn{
+    display: inline-block;
+    color: lemonchiffon;
+    text-align: center;
+    padding: 14px 15px;
+    text-decoration: none;
+}
+
+
+li a:hover, .dropdown:hover, .dropbtn:hover{
+    background-color: lemonchiffon; 
+}
+
+li.dropdown{
+    display: inline-block;
+}
+
+.dropdown-content{
+    display: none;
+    position: absolute;
+    background-color: rgb(128, 152, 150);
+    min-width: 160px;
+    box-shadow: 0px 8px 16px rgb(0, 0, 0); 
+    z-index: 1;
+}
+
+.dropdown-content a{
+    color: rgb(46, 46, 46);
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+}
+
+.dropdown-content a:hover{
+    background-color: lemonchiffon;
+}
+
+.dropdown:hover .dropdown-content{
+    display: block;
+}
+li.a{
+    align:left;
+    background-color: beige;
+}
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px; 
+}
+.column {
+    flex: 1 1 calc(33.33% - 15px);
+    padding: 15px;
+}
+
+/* Tampilkan konten yang ditargetkan */
+.konten:target {
+    display: block;
+}
+
+
+.konten {
+    text-align: center;
+    color: rgb(38, 73, 99);
+}
+
+body{
+    background-image: url(bg2.avif);
+    background-size: cover;
+}
+h2{
+    margin-top: 50px;
+    color: rgba(41, 96, 49, 0.751); 
+    font-family: 'Namaku';
+}
+
+/* kode footer */
+.footer{
+    width: 1280px;
+    position: fixed;
+    margin: 500px;
+}
